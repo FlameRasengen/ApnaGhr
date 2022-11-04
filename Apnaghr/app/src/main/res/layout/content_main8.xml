@@ -23,41 +23,19 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="284dp"
-            android:layout_height="56dp"
-            android:text="Log-In"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="498dp" />
-
-        <EditText
-            android:id="@+id/editTextTextPassword2"
-            android:layout_width="290dp"
-            android:layout_height="48dp"
-            android:layout_marginBottom="300dp"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.586"
-            app:layout_constraintStart_toStartOf="parent" />
-
         <EditText
             android:id="@+id/editTextTextEmailAddress2"
             android:layout_width="286dp"
             android:layout_height="48dp"
-            android:layout_marginBottom="376dp"
             android:ems="10"
             android:hint="Username"
             android:inputType="textEmailAddress"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.6"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.455" />
 
         <TextView
             android:id="@+id/textView3"
@@ -90,6 +68,32 @@
             app:layout_constraintVertical_bias="0.037"
             app:srcCompat="@drawable/indian_institute_of_technology_dharwad_logo_svg" />
 
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="294dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.606"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.573" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="307dp"
+            android:layout_height="65dp"
+            android:text="Log-In"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.557"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <fragment
@@ -106,36 +110,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:navGraph="@navigation/nav_graph4" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="300dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.586"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_content_main3"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="286dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="376dp"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_content_main3"
-        app:layout_constraintVertical_bias="0.973" />
 
     <TextView
         android:id="@+id/textView21"

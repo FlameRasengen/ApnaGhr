@@ -51,30 +51,6 @@
         app:layout_constraintVertical_bias="0.037"
         app:srcCompat="@drawable/indian_institute_of_technology_dharwad_logo_svg" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="114dp"
-        android:layout_height="108dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.409"
-        app:srcCompat="@drawable/leave" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="125dp"
-        android:layout_height="119dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment_content_main4"
-        app:layout_constraintHorizontal_bias="0.846"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398"
-        app:srcCompat="@drawable/complaint" />
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
@@ -105,30 +81,6 @@
         app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_content_main4"
         app:layout_constraintVertical_bias="0.539" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
-        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705"
-        app:srcCompat="@drawable/reallocation" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="132dp"
-        android:layout_height="107dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
-        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.706"
-        app:srcCompat="@drawable/guest" />
-
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
@@ -158,4 +110,52 @@
         app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.805" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="113dp"
+        android:layout_height="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394"
+        app:srcCompat="@drawable/leave" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="114dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment_content_main4"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392"
+        app:srcCompat="@drawable/complaint" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="124dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment_content_main4"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        app:srcCompat="@drawable/reallocation" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="121dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712"
+        app:srcCompat="@drawable/guest" />
 </androidx.constraintlayout.widget.ConstraintLayout>

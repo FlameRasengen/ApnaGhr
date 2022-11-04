@@ -20,14 +20,14 @@ public class FirstFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-      binding=null;
-       binding = FragmentFirstBinding.inflate(inflater, container, false);
-       return binding.getRoot();
+
+        binding = FragmentFirstBinding.inflate(inflater, container, false);
+        return binding.getRoot();
 
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-       super.onViewCreated(view, savedInstanceState);
+        super.onViewCreated(view, savedInstanceState);
 
 
     }

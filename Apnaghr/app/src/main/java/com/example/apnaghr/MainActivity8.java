@@ -1,5 +1,6 @@
 package com.example.apnaghr;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -7,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.Button;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -19,7 +21,7 @@ public class MainActivity8 extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMain8Binding binding;
-
+    Button button_hcu_login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,14 @@ public class MainActivity8 extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
+        button_hcu_login = (Button) findViewById(R.id.button8);
+        button_hcu_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(MainActivity8.this,MainActivity11.class);
+                startActivity(intent);
+            }
+        });
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

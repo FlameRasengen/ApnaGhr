@@ -51,8 +51,8 @@
         android:id="@+id/editTextTextMultiLine2"
         android:layout_width="280dp"
         android:layout_height="138dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="252dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="150dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="Mention your complaint"
@@ -61,8 +61,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main5"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_content_main5"
-        app:layout_constraintVertical_bias="0.701" />
+        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_content_main6"
+        app:layout_constraintVertical_bias="0.832" />
 
     <TextView
         android:id="@+id/textView16"

@@ -2,73 +2,55 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:visibility="visible"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:visibility="visible">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/nav_host_fragment_content_main"
-        android:layout_width="410dp"
-        android:layout_height="728dp"
-        android:background="@color/black"
-        android:visibility="visible"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:navGraph="@navigation/nav_graph" />
+        app:navGraph="@navigation/nav_graph13" />
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/black"
-        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="229dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="800dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="82dp"
         android:text="ApnaGhr"
-        android:textColor="@color/white"
+        android:textColor="@color/design_default_color_background"
         android:textSize="60sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment_content_main"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/nav_host_fragment_content_main"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.493" />
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintVertical_bias="0.463" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="103dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="1000dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/nav_host_fragment_content_main"
-        app:layout_constraintHorizontal_bias="0.13"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nav_host_fragment_content_main"
-        app:layout_constraintVertical_bias="0.502"
+        android:layout_width="101dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314"
         app:srcCompat="@drawable/hostel_ag" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

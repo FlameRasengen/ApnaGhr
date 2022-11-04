@@ -30,49 +30,21 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="155dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_content_main2"
-        app:layout_constraintVertical_bias="0.485"
-        app:srcCompat="@drawable/main_1" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="250dp"
         android:text="Student"
         android:textColor="@color/purple_500"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.949" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="155dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="27dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.878"
-        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476"
-        app:srcCompat="@drawable/the_professor" />
+        app:layout_constraintVertical_bias="0.644" />
 
     <TextView
         android:id="@+id/textView2"
@@ -86,10 +58,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintHorizontal_bias="0.758"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
+        app:layout_constraintVertical_bias="0.63" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -147,5 +119,28 @@
         app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main2"
         app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_content_main2"
         app:layout_constraintVertical_bias="0.943" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="137dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_1" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="139dp"
+        android:layout_height="129dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment_content_main2"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/the_professor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

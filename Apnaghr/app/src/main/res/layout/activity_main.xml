@@ -16,14 +16,11 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            android:visibility="invisible"
             app:popupTheme="@style/Theme.Apnaghr.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include
-        layout="@layout/content_main"
-        android:visibility="visible" />
+    <include layout="@layout/content_main" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"

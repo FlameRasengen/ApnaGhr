@@ -5,9 +5,12 @@ import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -19,11 +22,14 @@ import com.example.apnaghr.databinding.ActivityMain2Binding;
 import java.util.Timer;
 import java.util.TimerTask;
 
+
+
 public class MainActivity2 extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMain2Binding binding;
     Timer timer;
+    ImageButton button_student, button_hcu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,15 +43,24 @@ public class MainActivity2 extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        timer= new Timer();
-        timer.schedule(new TimerTask() {
+        button_student=(ImageButton)findViewById(R.id.imageButton);
+        button_student.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
-               // Intent intent= new Intent(MainActivity2.this,MainActivity3.class);
-                //startActivity(intent);
-                //finish();
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity2.this,MainActivity3.class);
+                startActivity(intent);
             }
-        },1000);
+
+        });
+        button_hcu=(ImageButton)findViewById(R.id.imageButton2);
+        button_hcu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity2.this,MainActivity8.class);
+                startActivity(intent);
+            }
+
+        });
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
